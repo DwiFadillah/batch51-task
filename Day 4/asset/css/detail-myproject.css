@@ -1,0 +1,70 @@
+.container {
+    max-width: 100%;
+    padding: 40px;
+    height: 80vh;
+    background-color: rgb(255, 255, 255);
+}
+
+.detail-blog{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 100px;
+}
+
+.detail-blog .text-title{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.detail-blog .detail{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.detail-blog .left{
+    flex: 68%;
+}
+.left img{
+    width: 100%;
+    height: 400px;
+}
+.detail-blog .right{
+    flex: 28%;
+}
+
+.detail-blog .right-title{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.detail-blog .right-desc{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    font-size: 20px;
+    margin-bottom: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.technologies .react{grid-area: react;}
+.technologies .node{grid-area: node;}
+.technologies .next{grid-area: next;}
+.technologies .type{grid-area: type;}
+.detail-blog .technologies{
+    display: grid;
+    row-gap: 20px;
+    grid-template-areas: 'node next' 'react type';
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.detail-blog .paragraf{
+    font-size: 20px;
+    text-align: justify;
+}

@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Personal Web</title>
+        <link rel="stylesheet" href="asset/css/index.css">
+        <link rel="stylesheet" href="asset/css/contactme.css">
+    </head>
+
+    <body>
+        <nav class="nav-body">
+            <div class="flex-container">
+                <div class="div-item">
+                    <a href="index.html"><img src="asset/image/dumbways.png" alt="image dumbways"></a>
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="myproject.html" class="nav-link">My Project</a>
+                </div>
+                <div class="div-contactme">
+                    <a href="contactme.html">Contact Me</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="form-contact">
+            <h2>GET IN TOUCH</h2>
+            <form action="">
+                <label for="">Name</label>
+                <input type="text" id="name" class="input-contact">
+                <label for="">Email</label>
+                <input type="text" id="email" class="input-contact">
+                <label for="">Phone Number</label>
+                <input type="text" id="phonenumber" class="input-contact">
+                <label for="">Subject</label>
+                <select name="" id="subject" class="input-contact">
+                    <option value="Frontend">Frontend Developer</option>
+                    <option value="Backend">Backend Developer</option>
+                    <option value="Fullstack">Fullstack Developer</option>
+                </select>
+                <label for="">Your Massage</label>
+                <textarea name="" id="message" cols="30" rows="5" class="input-contact"></textarea>
+                <div class="submit">
+                    <input type="button" onclick="Submit()" value="submit" class="btn-submit">
+                </div>
+            </form>
+        </div>
+    </body>
+    <script src="asset/js/contactme.js"></script>
+</html>
