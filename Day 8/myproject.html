@@ -1,6 +1,7 @@
 <html>
     <head>
         <title>Personal Web</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="asset/css/index.css">
         <link rel="stylesheet" href="asset/css/myproject.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -11,19 +12,30 @@
             <div class="flex-container">
                 <div class="div-item">
                     <a href="index.html"><img src="asset/image/dumbways.png" alt="image dumbways"></a>
-                    <a href="index.html" class="nav-link">Home</a>
-                    <a href="myproject.html" class="nav-link">My Project</a>
+                    <div class="menus">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </div>
+                    <div class="menus">
+                        <a href="myproject.html" class="nav-link">My Project</a>
+                    </div>
+                    <div class="menus">
+                        <a href="Testimonial.html" class="nav-link">Testimonials</a>
+                    </div>
                 </div>
                 <div class="div-contactme">
-                    <a href="contactme.html">Contact Me</a>
+                    <a href="contactme.html" class="menus">Contact Me</a>
                 </div>
             </div>
+            <i class="fa-solid fa-bars" id="Menubar" onclick="Togglenav()"></i>
         </nav>
-
+        <div class="nav-mobile" id="toggle-active">
+            <a href="index.html">Home</a>
+            <a href="myproject.html" class="active">My Project</a>
+            <a href="contactme.html">Contact Me</a>
+        </div>
         <div class="form-container">
             <h2>ADD MY PROJECT</h2>
             <form onsubmit="addProject(event)">
-
                 <div>
                     <label for="" class="input-label">Project Name</label>
                     <input type="text" class="input-form" id="projectName">
@@ -81,11 +93,12 @@
             </form>
         </div>
         
-        <div class="project">
+        <div class="blog">
             <h1>My Project</h1>
-            <div class="project-list" id="contents">
+            <div class="blog-list" id="contents">
             </div>
         </div>
     </body>
     <script src="asset/js/myproject.js"></script>
+    <script src="asset/js/navbar.js"></script>
 </html>
